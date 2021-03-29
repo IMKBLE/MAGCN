@@ -1,0 +1,450 @@
+D:\ProgramData\Anaconda3\python.exe "E:/ChengJiafeng/AVERAGE/GAE_Adversarial KMeans_twocora/GAE_Adversarial_KMeans.py"
+Graph的维度：(2708, 2708)
+Content的维度：(2708, 1433)
+Label的维度：(2708,)
+隐层单元1的维度：[1433, 512, 512]
+隐层单元2的维度：[1433, 512, 512]
+WARNING: Logging before flag parsing goes to stderr.
+W1209 17:13:29.788866 23384 deprecation_wrapper.py:119] From E:\ChengJiafeng\AVERAGE\GAE_Adversarial KMeans_twocora\Network\Trainer.py:129: The name tf.sparse_placeholder is deprecated. Please use tf.compat.v1.sparse_placeholder instead.
+
+W1209 17:13:29.801831 23384 deprecation_wrapper.py:119] From E:\ChengJiafeng\AVERAGE\GAE_Adversarial KMeans_twocora\Network\Trainer.py:130: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W1209 17:13:29.808320 23384 deprecation_wrapper.py:119] From E:\ChengJiafeng\AVERAGE\GAE_Adversarial KMeans_twocora\Network\Graph_Attention_Encoder.py:97: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W1209 17:13:29.809317 23384 deprecation.py:506] From D:\ProgramData\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W1209 17:13:29.891098 23384 deprecation_wrapper.py:119] From E:\ChengJiafeng\AVERAGE\GAE_Adversarial KMeans_twocora\Network\Graph_Attention_Encoder.py:123: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W1209 17:13:29.896085 23384 deprecation_wrapper.py:119] From E:\ChengJiafeng\AVERAGE\GAE_Adversarial KMeans_twocora\Network\Graph_Attention_Encoder.py:132: The name tf.sparse_softmax is deprecated. Please use tf.sparse.softmax instead.
+
+W1209 17:13:29.906059 23384 deprecation.py:323] From E:\ChengJiafeng\AVERAGE\GAE_Adversarial KMeans_twocora\Network\Graph_Attention_Encoder.py:205: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+z的维度(?, 512)
+W1209 17:13:30.192292 23384 deprecation_wrapper.py:119] From E:\ChengJiafeng\AVERAGE\GAE_Adversarial KMeans_twocora\Network\Trainer.py:150: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W1209 17:13:30.224210 23384 deprecation.py:323] From D:\ProgramData\Anaconda3\lib\site-packages\tensorflow\python\ops\math_grad.py:1205: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+D:\ProgramData\Anaconda3\lib\site-packages\tensorflow\python\ops\gradients_util.py:93: UserWarning: Converting sparse IndexedSlices to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  "Converting sparse IndexedSlices to a dense Tensor of unknown shape. "
+2019-12-09 17:13:31.120285: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2019-12-09 17:13:31.122861: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library nvcuda.dll
+2019-12-09 17:13:31.260898: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:02:00.0
+2019-12-09 17:13:31.261025: I tensorflow/stream_executor/platform/default/dlopen_checker_stub.cc:25] GPU libraries are statically linked, skip dlopen check.
+2019-12-09 17:13:31.262011: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2019-12-09 17:13:32.147866: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-12-09 17:13:32.147964: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2019-12-09 17:13:32.148014: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2019-12-09 17:13:32.150844: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 8695 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:02:00.0, compute capability: 7.5)
+D:\ProgramData\Anaconda3\lib\site-packages\numpy\core\numeric.py:538: ComplexWarning: Casting complex values to real discards the imaginary part
+  return array(a, dtype, copy=False, order=order)
+Kmeans train start.
+Kmeans train end.
+D:\ProgramData\Anaconda3\lib\site-packages\numpy\core\numeric.py:538: ComplexWarning: Casting complex values to real discards the imaginary part
+  return array(a, dtype, copy=False, order=order)
+Epoch--0:	loss: 1179.82824707		sloss: 2338.94921875		floss: 10.34950161		dloss: 0.00000379	
+acc: 0.69313146		nmi: 0.52530475		f1: 0.57878001		ari: 0.44250513
+Epoch--5:	loss: 10.52512455		sloss: 2.19807839		floss: 9.42383480		dloss: 0.00000328	
+acc: 0.70125554		nmi: 0.52602249		f1: 0.58450917		ari: 0.45447339
+Epoch--10:	loss: 8.53221035		sloss: 0.02218051		floss: 8.51801968		dloss: 0.00000381	
+acc: 0.70125554		nmi: 0.52105897		f1: 0.58100647		ari: 0.46653653
+Epoch--15:	loss: 8.53170967		sloss: 0.00573375		floss: 8.52371693		dloss: 0.00000442	
+acc: 0.69054653		nmi: 0.50707523		f1: 0.56799442		ari: 0.45489299
+Epoch--20:	loss: 7.91326761		sloss: 0.15383464		floss: 7.82353544		dloss: 0.00000470	
+acc: 0.71676514		nmi: 0.53963611		f1: 0.59604762		ari: 0.48563498
+Epoch--25:	loss: 7.82474041		sloss: 0.00614189		floss: 7.81052876		dloss: 0.00000513	
+acc: 0.68906942		nmi: 0.50159919		f1: 0.56683179		ari: 0.46698328
+Epoch--30:	loss: 7.42273331		sloss: 0.07947876		floss: 7.36183977		dloss: 0.00000578	
+acc: 0.69977843		nmi: 0.51422871		f1: 0.57683190		ari: 0.47741693
+Epoch--35:	loss: 7.25099325		sloss: 0.01806646		floss: 7.21651936		dloss: 0.00000616	
+acc: 0.69571640		nmi: 0.51571958		f1: 0.57786005		ari: 0.47971474
+Epoch--40:	loss: 7.13686085		sloss: 0.03024581		floss: 7.08197021		dloss: 0.00000646	
+acc: 0.69165436		nmi: 0.51132935		f1: 0.57532762		ari: 0.47434725
+Epoch--45:	loss: 7.20101357		sloss: 0.03508304		floss: 7.12721014		dloss: 0.00000658	
+acc: 0.69903988		nmi: 0.52647658		f1: 0.58906179		ari: 0.49059292
+Epoch--50:	loss: 7.01226330		sloss: 0.02029135		floss: 6.92837620		dloss: 0.00000700	
+acc: 0.70162482		nmi: 0.53340483		f1: 0.59826320		ari: 0.48998951
+Epoch--55:	loss: 6.88770437		sloss: 0.03660919		floss: 6.77535248		dloss: 0.00000730	
+acc: 0.71085672		nmi: 0.54815326		f1: 0.60828342		ari: 0.48935402
+Epoch--60:	loss: 6.79428244		sloss: 0.02352392		floss: 6.67730522		dloss: 0.00000762	
+acc: 0.72008863		nmi: 0.55774002		f1: 0.61560243		ari: 0.49830489
+Epoch--65:	loss: 6.74159384		sloss: 0.02124619		floss: 6.62108040		dloss: 0.00000783	
+acc: 0.72895126		nmi: 0.56548087		f1: 0.62167857		ari: 0.50187088
+Epoch--70:	loss: 6.65000296		sloss: 0.02403111		floss: 6.52664280		dloss: 0.00000809	
+acc: 0.73744461		nmi: 0.57494815		f1: 0.62955640		ari: 0.51665368
+Epoch--75:	loss: 6.60392570		sloss: 0.01928471		floss: 6.48253298		dloss: 0.00000821	
+acc: 0.73596750		nmi: 0.57419370		f1: 0.62876004		ari: 0.51303812
+Epoch--80:	loss: 6.53069782		sloss: 0.02005142		floss: 6.40917540		dloss: 0.00000848	
+acc: 0.73855244		nmi: 0.57916436		f1: 0.63298946		ari: 0.51490423
+Epoch--85:	loss: 6.47252321		sloss: 0.02271974		floss: 6.35053492		dloss: 0.00000861	
+acc: 0.73892171		nmi: 0.58026056		f1: 0.63383205		ari: 0.51209853
+Epoch--90:	loss: 6.41850615		sloss: 0.02255633		floss: 6.29765701		dloss: 0.00000876	
+acc: 0.74261448		nmi: 0.58370436		f1: 0.63810466		ari: 0.51816887
+Epoch--95:	loss: 6.35832453		sloss: 0.02213321		floss: 6.23834181		dloss: 0.00000893	
+acc: 0.74224520		nmi: 0.58378318		f1: 0.63790504		ari: 0.51749087
+Epoch--100:	loss: 6.31313276		sloss: 0.02284627		floss: 6.19295740		dloss: 0.00000903	
+acc: 0.74446086		nmi: 0.58715985		f1: 0.64061417		ari: 0.52039182
+Epoch--105:	loss: 6.31111240		sloss: 0.02348696		floss: 6.19057608		dloss: 0.00000904	
+acc: 0.74889217		nmi: 0.59324370		f1: 0.64642041		ari: 0.52803844
+Epoch--110:	loss: 6.24907541		sloss: 0.02360891		floss: 6.12842560		dloss: 0.00000921	
+acc: 0.74741507		nmi: 0.59289268		f1: 0.64493433		ari: 0.52422001
+Epoch--115:	loss: 6.22959042		sloss: 0.02348307		floss: 6.10899115		dloss: 0.00000929	
+acc: 0.74852290		nmi: 0.59476287		f1: 0.64618265		ari: 0.52561615
+Epoch--120:	loss: 6.18614578		sloss: 0.02337904		floss: 6.06571150		dloss: 0.00000944	
+acc: 0.74778434		nmi: 0.59374437		f1: 0.64466724		ari: 0.52542237
+Epoch--125:	loss: 6.20701981		sloss: 0.02331734		floss: 6.08689928		dloss: 0.00000939	
+acc: 0.74593796		nmi: 0.59167059		f1: 0.64249874		ari: 0.52235109
+Epoch--130:	loss: 6.14700460		sloss: 0.02334744		floss: 6.02721024		dloss: 0.00000953	
+acc: 0.74667651		nmi: 0.59233638		f1: 0.64385749		ari: 0.52395519
+Epoch--135:	loss: 6.12013435		sloss: 0.02340013		floss: 6.00064039		dloss: 0.00000959	
+acc: 0.74815362		nmi: 0.59452316		f1: 0.64603643		ari: 0.52650655
+Epoch--140:	loss: 6.10015202		sloss: 0.02345126		floss: 5.98093653		dloss: 0.00000968	
+acc: 0.74593796		nmi: 0.58977994		f1: 0.64225064		ari: 0.52256377
+Epoch--145:	loss: 6.07324696		sloss: 0.02348160		floss: 5.95434189		dloss: 0.00000977	
+acc: 0.74630724		nmi: 0.59038254		f1: 0.64258909		ari: 0.52396961
+Epoch--150:	loss: 6.07661867		sloss: 0.02354454		floss: 5.95813751		dloss: 0.00000975	
+acc: 0.74630724		nmi: 0.58995094		f1: 0.64247129		ari: 0.52454647
+Epoch--155:	loss: 6.04433966		sloss: 0.02360349		floss: 5.92643929		dloss: 0.00000981	
+acc: 0.74593796		nmi: 0.59019201		f1: 0.64236875		ari: 0.52299371
+Epoch--160:	loss: 6.01101351		sloss: 0.02362721		floss: 5.89377451		dloss: 0.00000991	
+acc: 0.74815362		nmi: 0.59335590		f1: 0.64513455		ari: 0.52798834
+Epoch--165:	loss: 5.99412107		sloss: 0.02360444		floss: 5.87756443		dloss: 0.00000998	
+acc: 0.74778434		nmi: 0.59299244		f1: 0.64476475		ari: 0.52710779
+Epoch--170:	loss: 6.09143829		sloss: 0.02354900		floss: 5.97553396		dloss: 0.00000979	
+acc: 0.74852290		nmi: 0.59353627		f1: 0.64553870		ari: 0.52812906
+Epoch--175:	loss: 6.02507544		sloss: 0.02355788		floss: 5.90973663		dloss: 0.00000996	
+acc: 0.74963072		nmi: 0.59557379		f1: 0.64719121		ari: 0.53010070
+Epoch--180:	loss: 5.98036289		sloss: 0.02355781		floss: 5.86554480		dloss: 0.00001008	
+acc: 0.75036928		nmi: 0.59682899		f1: 0.64828011		ari: 0.53188957
+Epoch--185:	loss: 5.94984865		sloss: 0.02353343		floss: 5.83550978		dloss: 0.00001015	
+acc: 0.74963072		nmi: 0.59575540		f1: 0.64719674		ari: 0.53033610
+Epoch--190:	loss: 5.92958689		sloss: 0.02348759		floss: 5.81568480		dloss: 0.00001019	
+acc: 0.74963072		nmi: 0.59613249		f1: 0.64730724		ari: 0.53001617
+Epoch--195:	loss: 5.93600512		sloss: 0.02350887		floss: 5.82246399		dloss: 0.00001020	
+acc: 0.74963072		nmi: 0.59613249		f1: 0.64730724		ari: 0.53001617
+Epoch--200:	loss: 5.90746737		sloss: 0.02349158		floss: 5.79427385		dloss: 0.00001028	
+acc: 0.75036928		nmi: 0.59801472		f1: 0.64850459		ari: 0.53180787
+Epoch--205:	loss: 5.89773989		sloss: 0.02343328		floss: 5.78488970		dloss: 0.00001033	
+acc: 0.75073855		nmi: 0.59839282		f1: 0.64890860		ari: 0.53275011
+Epoch--210:	loss: 5.88057852		sloss: 0.02346350		floss: 5.76801157		dloss: 0.00001036	
+acc: 0.74963072		nmi: 0.59695931		f1: 0.64756001		ari: 0.53043889
+Epoch--215:	loss: 5.88050604		sloss: 0.02343458		floss: 5.76823902		dloss: 0.00001035	
+acc: 0.74926145		nmi: 0.59658503		f1: 0.64715881		ari: 0.52950142
+Epoch--220:	loss: 5.87156677		sloss: 0.02341509		floss: 5.75958157		dloss: 0.00001038	
+acc: 0.74926145		nmi: 0.59730598		f1: 0.64743571		ari: 0.52971552
+Epoch--225:	loss: 5.85681772		sloss: 0.02339965		floss: 5.74509668		dloss: 0.00001040	
+acc: 0.75000000		nmi: 0.59826672		f1: 0.64842132		ari: 0.53074520
+Epoch--230:	loss: 5.84070683		sloss: 0.02340657		floss: 5.72921228		dloss: 0.00001044	
+acc: 0.75036928		nmi: 0.59906712		f1: 0.64904010		ari: 0.53099500
+Epoch--235:	loss: 5.87806940		sloss: 0.02340191		floss: 5.76677561		dloss: 0.00001035	
+acc: 0.74963072		nmi: 0.59772726		f1: 0.64781677		ari: 0.53008750
+Epoch--240:	loss: 5.97761583		sloss: 0.02331566		floss: 5.86653137		dloss: 0.00001009	
+acc: 0.74889217		nmi: 0.59844442		f1: 0.64745845		ari: 0.52932644
+Epoch--245:	loss: 5.98402166		sloss: 0.02335166		floss: 5.87305546		dloss: 0.00001031	
+acc: 0.74852290		nmi: 0.59802939		f1: 0.64721186		ari: 0.52818421
+Epoch--250:	loss: 5.90877342		sloss: 0.02339803		floss: 5.79791355		dloss: 0.00001034	
+acc: 0.74889217		nmi: 0.59876261		f1: 0.64764485		ari: 0.52919394
+Epoch--255:	loss: 5.87491417		sloss: 0.02339869		floss: 5.76419401		dloss: 0.00001038	
+acc: 0.74852290		nmi: 0.59857052		f1: 0.64711204		ari: 0.52860301
+Epoch--260:	loss: 5.84514570		sloss: 0.02333354		floss: 5.73461533		dloss: 0.00001044	
+acc: 0.74852290		nmi: 0.59857052		f1: 0.64711204		ari: 0.52860301
+Epoch--265:	loss: 5.82845545		sloss: 0.02330469		floss: 5.71809912		dloss: 0.00001049	
+acc: 0.74852290		nmi: 0.59852372		f1: 0.64714747		ari: 0.52844816
+Epoch--270:	loss: 5.82681561		sloss: 0.02331035		floss: 5.71662140		dloss: 0.00001047	
+acc: 0.74852290		nmi: 0.59852372		f1: 0.64714747		ari: 0.52844816
+Epoch--275:	loss: 5.80437374		sloss: 0.02331321		floss: 5.69433641		dloss: 0.00001053	
+acc: 0.74852290		nmi: 0.59808591		f1: 0.64714913		ari: 0.52779349
+Epoch--280:	loss: 5.79177570		sloss: 0.02331565		floss: 5.68188906		dloss: 0.00001057	
+acc: 0.74815362		nmi: 0.59776572		f1: 0.64671840		ari: 0.52702058
+Epoch--285:	loss: 5.77605295		sloss: 0.02334152		floss: 5.66630125		dloss: 0.00001063	
+acc: 0.74778434		nmi: 0.59712965		f1: 0.64617211		ari: 0.52676828
+Epoch--290:	loss: 5.76469851		sloss: 0.02327327		floss: 5.65512085		dloss: 0.00001067	
+acc: 0.74741507		nmi: 0.59601125		f1: 0.64554352		ari: 0.52626621
+Epoch--295:	loss: 5.75959587		sloss: 0.02316896		floss: 5.65020370		dloss: 0.00001068	
+acc: 0.74741507		nmi: 0.59644741		f1: 0.64554331		ari: 0.52691682
+Epoch--300:	loss: 5.94627094		sloss: 0.02373784		floss: 5.83671856		dloss: 0.00001028	
+acc: 0.74741507		nmi: 0.59644741		f1: 0.64554331		ari: 0.52691682
+Epoch--305:	loss: 5.92392015		sloss: 0.02134155		floss: 5.81565666		dloss: 0.00001041	
+acc: 0.74704579		nmi: 0.59670625		f1: 0.64540546		ari: 0.52514836
+Epoch--310:	loss: 5.89234447		sloss: 0.03635547		floss: 5.77626705		dloss: 0.00001067	
+acc: 0.74704579		nmi: 0.59675054		f1: 0.64532031		ari: 0.52598436
+Epoch--315:	loss: 5.87411404		sloss: 0.02173823		floss: 5.76602411		dloss: 0.00001055	
+acc: 0.74667651		nmi: 0.59586485		f1: 0.64474460		ari: 0.52527171
+Epoch--320:	loss: 5.81134462		sloss: 0.02426327		floss: 5.70202351		dloss: 0.00001060	
+acc: 0.74593796		nmi: 0.59514524		f1: 0.64396475		ari: 0.52343671
+Epoch--325:	loss: 5.77964640		sloss: 0.03146518		floss: 5.66661930		dloss: 0.00001065	
+acc: 0.74556869		nmi: 0.59482828		f1: 0.64353842		ari: 0.52267095
+Epoch--330:	loss: 5.76834869		sloss: 0.03229288		floss: 5.65491772		dloss: 0.00001067	
+acc: 0.74593796		nmi: 0.59537725		f1: 0.64405428		ari: 0.52303892
+Epoch--335:	loss: 5.76373625		sloss: 0.02851434		floss: 5.65238762		dloss: 0.00001068	
+acc: 0.74593796		nmi: 0.59537725		f1: 0.64405428		ari: 0.52303892
+Epoch--340:	loss: 5.74356508		sloss: 0.02579300		floss: 5.63375998		dloss: 0.00001074	
+acc: 0.74593796		nmi: 0.59555255		f1: 0.64412865		ari: 0.52317019
+Epoch--345:	loss: 5.72797537		sloss: 0.02410125		floss: 5.61912394		dloss: 0.00001079	
+acc: 0.74446086		nmi: 0.59381437		f1: 0.64252823		ari: 0.51942379
+Epoch--350:	loss: 5.71742487		sloss: 0.02339957		floss: 5.60895300		dloss: 0.00001080	
+acc: 0.74446086		nmi: 0.59361435		f1: 0.64245189		ari: 0.51929428
+Epoch--355:	loss: 5.73514366		sloss: 0.02333573		floss: 5.62683773		dloss: 0.00001076	
+acc: 0.74519941		nmi: 0.59411510		f1: 0.64294058		ari: 0.52188601
+Epoch--360:	loss: 5.77780771		sloss: 0.02223214		floss: 5.66823816		dloss: 0.00001076	
+acc: 0.74446086		nmi: 0.59235431		f1: 0.64224792		ari: 0.51891840
+Epoch--365:	loss: 5.72703218		sloss: 0.02248224		floss: 5.61862278		dloss: 0.00001080	
+acc: 0.74519941		nmi: 0.59350716		f1: 0.64314749		ari: 0.52005187
+Epoch--370:	loss: 5.70948219		sloss: 0.02216554		floss: 5.60191965		dloss: 0.00001084	
+acc: 0.74409158		nmi: 0.59264471		f1: 0.64180243		ari: 0.51831491
+Epoch--375:	loss: 5.69836855		sloss: 0.02241386		floss: 5.59083891		dloss: 0.00001088	
+acc: 0.74372230		nmi: 0.59232874		f1: 0.64137799		ari: 0.51755555
+Epoch--380:	loss: 5.69119215		sloss: 0.02340398		floss: 5.58319569		dloss: 0.00001088	
+acc: 0.74409158		nmi: 0.59326344		f1: 0.64206962		ari: 0.51838972
+Epoch--385:	loss: 5.70278311		sloss: 0.02427804		floss: 5.59438372		dloss: 0.00001088	
+acc: 0.74409158		nmi: 0.59303032		f1: 0.64187625		ari: 0.51855382
+Epoch--390:	loss: 5.68891144		sloss: 0.02428138		floss: 5.58045483		dloss: 0.00001093	
+acc: 0.74409158		nmi: 0.59217856		f1: 0.64166107		ari: 0.51865938
+Epoch--395:	loss: 5.67651415		sloss: 0.02477915		floss: 5.56776381		dloss: 0.00001094	
+acc: 0.74409158		nmi: 0.59191366		f1: 0.64155298		ari: 0.51916943
+Epoch--400:	loss: 5.66956615		sloss: 0.02585731		floss: 5.56050062		dloss: 0.00001096	
+acc: 0.74298375		nmi: 0.59126659		f1: 0.64014077		ari: 0.51857583
+Epoch--405:	loss: 5.67158651		sloss: 0.01304447		floss: 5.56601095		dloss: 0.00001097	
+acc: 0.74187592		nmi: 0.58795999		f1: 0.63854939		ari: 0.51489432
+Epoch--410:	loss: 5.80482101		sloss: 0.02108257		floss: 5.69746065		dloss: 0.00001070	
+acc: 0.74335303		nmi: 0.58998921		f1: 0.64022158		ari: 0.51821721
+Epoch--415:	loss: 5.89945984		sloss: 0.02227315		floss: 5.79032087		dloss: 0.00001056	
+acc: 0.74335303		nmi: 0.58868132		f1: 0.63984754		ari: 0.51821527
+Epoch--420:	loss: 6.42375612		sloss: 0.01767619		floss: 6.31846571		dloss: 0.00001051	
+acc: 0.74150665		nmi: 0.59008766		f1: 0.63850920		ari: 0.51512767
+Epoch--425:	loss: 6.56929588		sloss: 0.04529919		floss: 6.44400644		dloss: 0.00000959	
+acc: 0.74446086		nmi: 0.59109813		f1: 0.64190940		ari: 0.52013882
+Epoch--430:	loss: 7.20219040		sloss: 0.03068106		floss: 7.08939075		dloss: 0.00000997	
+acc: 0.74150665		nmi: 0.58903036		f1: 0.63813241		ari: 0.51546301
+Epoch--435:	loss: 6.33373451		sloss: 0.00164110		floss: 6.22594452		dloss: 0.00001018	
+acc: 0.73966027		nmi: 0.58716585		f1: 0.63651186		ari: 0.51017391
+Epoch--440:	loss: 6.28931665		sloss: 0.00586280		floss: 6.18770313		dloss: 0.00000992	
+acc: 0.74076809		nmi: 0.58973219		f1: 0.63784242		ari: 0.51418843
+Epoch--445:	loss: 6.28121376		sloss: 0.01796690		floss: 6.17284918		dloss: 0.00000998	
+acc: 0.74298375		nmi: 0.58981906		f1: 0.63934485		ari: 0.51902632
+Epoch--450:	loss: 6.19930410		sloss: 0.02726232		floss: 6.08854294		dloss: 0.00001011	
+acc: 0.74224520		nmi: 0.58799351		f1: 0.63846511		ari: 0.51705815
+Epoch--455:	loss: 6.04875660		sloss: 0.02800170		floss: 5.93787956		dloss: 0.00001020	
+acc: 0.74224520		nmi: 0.58959412		f1: 0.63901297		ari: 0.51796116
+Epoch--460:	loss: 5.92618942		sloss: 0.02222578		floss: 5.81817007		dloss: 0.00001046	
+acc: 0.74224520		nmi: 0.59091857		f1: 0.63961507		ari: 0.51694273
+Epoch--465:	loss: 5.87303400		sloss: 0.01835551		floss: 5.76720476		dloss: 0.00001047	
+acc: 0.74224520		nmi: 0.59014687		f1: 0.63949107		ari: 0.51555891
+Epoch--470:	loss: 5.81915426		sloss: 0.02108642		floss: 5.71244860		dloss: 0.00001059	
+acc: 0.74335303		nmi: 0.59092670		f1: 0.64060579		ari: 0.51789769
+Epoch--475:	loss: 5.77855110		sloss: 0.02411537		floss: 5.67052174		dloss: 0.00001068	
+acc: 0.74372230		nmi: 0.59133492		f1: 0.64089506		ari: 0.51907864
+Epoch--480:	loss: 5.75111818		sloss: 0.02219038		floss: 5.64430141		dloss: 0.00001075	
+acc: 0.74372230		nmi: 0.59133492		f1: 0.64089506		ari: 0.51907864
+Epoch--485:	loss: 5.72860432		sloss: 0.02117356		floss: 5.62242126		dloss: 0.00001080	
+acc: 0.74372230		nmi: 0.59130269		f1: 0.64093920		ari: 0.51893759
+Epoch--490:	loss: 5.73002625		sloss: 0.02344700		floss: 5.62271833		dloss: 0.00001079	
+acc: 0.74335303		nmi: 0.59098475		f1: 0.64051325		ari: 0.51817465
+Epoch--495:	loss: 5.71136999		sloss: 0.02343454		floss: 5.60410452		dloss: 0.00001086	
+acc: 0.74446086		nmi: 0.59260251		f1: 0.64214112		ari: 0.52011817
+Epoch--500:	loss: 5.69209194		sloss: 0.02252793		floss: 5.58531713		dloss: 0.00001090	
+acc: 0.74446086		nmi: 0.59260251		f1: 0.64214112		ari: 0.52011817
+Epoch--505:	loss: 5.67930508		sloss: 0.02343669		floss: 5.57215500		dloss: 0.00001094	
+acc: 0.74409158		nmi: 0.59231155		f1: 0.64166725		ari: 0.51949030
+Epoch--510:	loss: 5.66883612		sloss: 0.02262294		floss: 5.56217289		dloss: 0.00001096	
+acc: 0.74409158		nmi: 0.59231155		f1: 0.64166725		ari: 0.51949030
+Epoch--515:	loss: 5.66990995		sloss: 0.02258348		floss: 5.56331778		dloss: 0.00001096	
+acc: 0.74409158		nmi: 0.59231155		f1: 0.64166725		ari: 0.51949030
+Epoch--520:	loss: 5.66315556		sloss: 0.02292467		floss: 5.55643892		dloss: 0.00001099	
+acc: 0.74409158		nmi: 0.59231155		f1: 0.64166725		ari: 0.51949030
+Epoch--525:	loss: 5.65601778		sloss: 0.02267361		floss: 5.54945898		dloss: 0.00001103	
+acc: 0.74409158		nmi: 0.59231155		f1: 0.64166725		ari: 0.51949030
+Epoch--530:	loss: 5.64533043		sloss: 0.02286202		floss: 5.53872252		dloss: 0.00001102	
+acc: 0.74409158		nmi: 0.59231155		f1: 0.64166725		ari: 0.51949030
+Epoch--535:	loss: 5.63801908		sloss: 0.02259940		floss: 5.53156900		dloss: 0.00001106	
+acc: 0.74335303		nmi: 0.59141579		f1: 0.64077338		ari: 0.51822296
+Epoch--540:	loss: 5.63155365		sloss: 0.02274937		floss: 5.52505922		dloss: 0.00001106	
+acc: 0.74335303		nmi: 0.59120158		f1: 0.64068930		ari: 0.51862684
+Epoch--545:	loss: 5.62612629		sloss: 0.02265775		floss: 5.51970482		dloss: 0.00001108	
+acc: 0.74335303		nmi: 0.59120158		f1: 0.64068930		ari: 0.51862684
+Epoch--550:	loss: 5.62120962		sloss: 0.02268123		floss: 5.51479769		dloss: 0.00001110	
+acc: 0.74261448		nmi: 0.59011020		f1: 0.63972269		ari: 0.51723829
+Epoch--555:	loss: 5.62436008		sloss: 0.02266478		floss: 5.51798153		dloss: 0.00001110	
+acc: 0.74261448		nmi: 0.58894956		f1: 0.63924108		ari: 0.51730669
+Epoch--560:	loss: 5.68949795		sloss: 0.02265840		floss: 5.58313942		dloss: 0.00001095	
+acc: 0.74261448		nmi: 0.58894956		f1: 0.63924108		ari: 0.51730669
+Epoch--565:	loss: 5.66606426		sloss: 0.02263730		floss: 5.55973673		dloss: 0.00001109	
+acc: 0.74298375		nmi: 0.58925385		f1: 0.63953011		ari: 0.51777600
+Epoch--570:	loss: 5.66007614		sloss: 0.02264147		floss: 5.55375719		dloss: 0.00001102	
+acc: 0.74335303		nmi: 0.58913234		f1: 0.63969475		ari: 0.51865205
+Epoch--575:	loss: 5.64176083		sloss: 0.02261531		floss: 5.53546667		dloss: 0.00001108	
+acc: 0.74372230		nmi: 0.59019937		f1: 0.64034264		ari: 0.51925732
+Epoch--580:	loss: 5.62795639		sloss: 0.02264040		floss: 5.52164650		dloss: 0.00001107	
+acc: 0.74372230		nmi: 0.59019937		f1: 0.64034264		ari: 0.51925732
+Epoch--585:	loss: 5.61568546		sloss: 0.02257853		floss: 5.50941086		dloss: 0.00001114	
+acc: 0.74372230		nmi: 0.59023653		f1: 0.64024210		ari: 0.51947796
+Epoch--590:	loss: 5.60558176		sloss: 0.02257656		floss: 5.49931765		dloss: 0.00001113	
+acc: 0.74372230		nmi: 0.59068826		f1: 0.64024643		ari: 0.52012202
+Epoch--595:	loss: 5.59837008		sloss: 0.02257400		floss: 5.49211216		dloss: 0.00001117	
+acc: 0.74372230		nmi: 0.59046952		f1: 0.64006697		ari: 0.52028005
+Epoch--600:	loss: 5.59305620		sloss: 0.02257590		floss: 5.48680830		dloss: 0.00001117	
+acc: 0.74372230		nmi: 0.59066718		f1: 0.64014581		ari: 0.52040889
+Epoch--605:	loss: 5.58819914		sloss: 0.02257036		floss: 5.48196173		dloss: 0.00001119	
+acc: 0.74372230		nmi: 0.59066718		f1: 0.64014581		ari: 0.52040889
+Epoch--610:	loss: 5.58394814		sloss: 0.02256994		floss: 5.47771835		dloss: 0.00001121	
+acc: 0.74372230		nmi: 0.59066718		f1: 0.64014581		ari: 0.52040889
+Epoch--615:	loss: 5.58066797		sloss: 0.02257042		floss: 5.47444773		dloss: 0.00001122	
+acc: 0.74372230		nmi: 0.59066718		f1: 0.64014581		ari: 0.52040889
+Epoch--620:	loss: 5.57796192		sloss: 0.02253281		floss: 5.47177124		dloss: 0.00001123	
+acc: 0.74335303		nmi: 0.59034802		f1: 0.63972085		ari: 0.51964236
+Epoch--625:	loss: 5.58112097		sloss: 0.02253043		floss: 5.47494602		dloss: 0.00001122	
+acc: 0.74261448		nmi: 0.58840908		f1: 0.63849560		ari: 0.51826762
+Epoch--630:	loss: 5.57388544		sloss: 0.02250539		floss: 5.46773767		dloss: 0.00001125	
+acc: 0.74261448		nmi: 0.58837882		f1: 0.63853922		ari: 0.51813446
+Epoch--635:	loss: 5.57031918		sloss: 0.02250974		floss: 5.46418571		dloss: 0.00001125	
+acc: 0.74261448		nmi: 0.58837882		f1: 0.63853922		ari: 0.51813446
+Epoch--640:	loss: 5.57036257		sloss: 0.02251361		floss: 5.46424055		dloss: 0.00001125	
+acc: 0.74224520		nmi: 0.58785466		f1: 0.63810279		ari: 0.51745063
+Epoch--645:	loss: 5.56572247		sloss: 0.02250730		floss: 5.45961666		dloss: 0.00001127	
+acc: 0.74150665		nmi: 0.58722021		f1: 0.63725802		ari: 0.51592692
+Epoch--650:	loss: 5.56575727		sloss: 0.02254676		floss: 5.45964956		dloss: 0.00001127	
+acc: 0.74150665		nmi: 0.58722021		f1: 0.63725802		ari: 0.51592692
+Epoch--655:	loss: 5.56455517		sloss: 0.02227531		floss: 5.45858288		dloss: 0.00001126	
+acc: 0.74150665		nmi: 0.58722021		f1: 0.63725802		ari: 0.51592692
+Epoch--660:	loss: 5.56016731		sloss: 0.02411196		floss: 5.45324659		dloss: 0.00001129	
+acc: 0.74002954		nmi: 0.58593598		f1: 0.63562788		ari: 0.51276801
+Epoch--665:	loss: 5.57939434		sloss: 0.01201759		floss: 5.47163439		dloss: 0.00001128	
+acc: 0.74335303		nmi: 0.58972911		f1: 0.64033789		ari: 0.51815741
+Epoch--670:	loss: 5.57583427		sloss: 0.00841235		floss: 5.46979713		dloss: 0.00001131	
+acc: 0.74150665		nmi: 0.58906169		f1: 0.63818330		ari: 0.51311976
+Epoch--675:	loss: 5.62369585		sloss: 0.04156107		floss: 5.50552702		dloss: 0.00001117	
+acc: 0.74335303		nmi: 0.58925128		f1: 0.64011439		ari: 0.51872445
+Epoch--680:	loss: 5.59262276		sloss: 0.02609968		floss: 5.48358965		dloss: 0.00001125	
+acc: 0.74039882		nmi: 0.58532034		f1: 0.63601568		ari: 0.51224928
+Epoch--685:	loss: 5.57908726		sloss: 0.02017963		floss: 5.47385740		dloss: 0.00001125	
+acc: 0.74113737		nmi: 0.58780948		f1: 0.63730731		ari: 0.51519343
+Epoch--690:	loss: 5.56981468		sloss: 0.02410320		floss: 5.46228027		dloss: 0.00001128	
+acc: 0.74335303		nmi: 0.59076889		f1: 0.64035028		ari: 0.51788871
+Epoch--695:	loss: 5.58465195		sloss: 0.02021216		floss: 5.47937107		dloss: 0.00001124	
+acc: 0.74187592		nmi: 0.58907235		f1: 0.63847420		ari: 0.51571261
+Epoch--700:	loss: 5.57211876		sloss: 0.02408883		floss: 5.46490955		dloss: 0.00001127	
+acc: 0.74076809		nmi: 0.58702692		f1: 0.63685926		ari: 0.51368877
+Epoch--705:	loss: 5.57190847		sloss: 0.02018094		floss: 5.46695328		dloss: 0.00001126	
+acc: 0.74224520		nmi: 0.58778017		f1: 0.63826136		ari: 0.51690086
+Epoch--710:	loss: 5.56228971		sloss: 0.02559198		floss: 5.45460129		dloss: 0.00001129	
+acc: 0.74224520		nmi: 0.58765736		f1: 0.63802388		ari: 0.51732330
+Epoch--715:	loss: 5.56909800		sloss: 0.02140494		floss: 5.46365070		dloss: 0.00001129	
+acc: 0.74150665		nmi: 0.58682148		f1: 0.63716649		ari: 0.51588057
+Epoch--720:	loss: 5.55727720		sloss: 0.02361299		floss: 5.45074034		dloss: 0.00001131	
+acc: 0.74002954		nmi: 0.58574171		f1: 0.63554791		ari: 0.51264801
+Epoch--725:	loss: 5.55450392		sloss: 0.02314937		floss: 5.44822216		dloss: 0.00001131	
+acc: 0.74002954		nmi: 0.58593598		f1: 0.63562788		ari: 0.51276801
+Epoch--730:	loss: 5.54625130		sloss: 0.02214316		floss: 5.44045877		dloss: 0.00001132	
+acc: 0.74002954		nmi: 0.58574171		f1: 0.63554791		ari: 0.51264801
+Epoch--735:	loss: 5.54025555		sloss: 0.02302414		floss: 5.43407488		dloss: 0.00001135	
+acc: 0.74002954		nmi: 0.58593598		f1: 0.63562788		ari: 0.51276801
+Epoch--740:	loss: 5.53565645		sloss: 0.02297985		floss: 5.42949724		dloss: 0.00001136	
+acc: 0.74002954		nmi: 0.58593598		f1: 0.63562788		ari: 0.51276801
+Epoch--745:	loss: 5.53563595		sloss: 0.02225969		floss: 5.42983961		dloss: 0.00001138	
+acc: 0.74002954		nmi: 0.58593598		f1: 0.63562788		ari: 0.51276801
+Epoch--750:	loss: 5.55374956		sloss: 0.02236561		floss: 5.44791079		dloss: 0.00001131	
+acc: 0.74039882		nmi: 0.58624644		f1: 0.63604336		ari: 0.51352086
+Epoch--755:	loss: 5.54580069		sloss: 0.02260535		floss: 5.43983269		dloss: 0.00001135	
+acc: 0.74039882		nmi: 0.58624644		f1: 0.63604336		ari: 0.51352086
+Epoch--760:	loss: 5.53305054		sloss: 0.02266162		floss: 5.42704439		dloss: 0.00001137	
+acc: 0.74076809		nmi: 0.58655877		f1: 0.63646068		ari: 0.51427596
+Epoch--765:	loss: 5.52835655		sloss: 0.02243386		floss: 5.42246103		dloss: 0.00001139	
+acc: 0.74076809		nmi: 0.58655877		f1: 0.63646068		ari: 0.51427596
+Epoch--770:	loss: 5.52414894		sloss: 0.02234260		floss: 5.41829777		dloss: 0.00001139	
+acc: 0.74076809		nmi: 0.58655877		f1: 0.63646068		ari: 0.51427596
+Epoch--775:	loss: 5.52272511		sloss: 0.02231006		floss: 5.41689444		dloss: 0.00001139	
+acc: 0.74076809		nmi: 0.58655877		f1: 0.63646068		ari: 0.51427596
+Epoch--780:	loss: 5.52010155		sloss: 0.02232502		floss: 5.41428185		dloss: 0.00001140	
+acc: 0.74076809		nmi: 0.58655877		f1: 0.63646068		ari: 0.51427596
+Epoch--785:	loss: 5.51555634		sloss: 0.02233074		floss: 5.40975237		dloss: 0.00001141	
+acc: 0.74113737		nmi: 0.58723787		f1: 0.63703905		ari: 0.51493056
+Epoch--790:	loss: 5.51352262		sloss: 0.02231560		floss: 5.40774727		dloss: 0.00001142	
+acc: 0.74113737		nmi: 0.58723787		f1: 0.63703905		ari: 0.51493056
+Epoch--795:	loss: 5.51296616		sloss: 0.02231870		floss: 5.40721130		dloss: 0.00001142	
+acc: 0.74076809		nmi: 0.58689222		f1: 0.63666264		ari: 0.51403984
+Epoch--800:	loss: 5.57500839		sloss: 0.02234099		floss: 5.46925116		dloss: 0.00001129	
+acc: 0.74039882		nmi: 0.58630962		f1: 0.63614270		ari: 0.51326049
+Epoch--805:	loss: 5.59769392		sloss: 0.02234713		floss: 5.49194670		dloss: 0.00001131	
+acc: 0.74039882		nmi: 0.58630962		f1: 0.63614270		ari: 0.51326049
+Epoch--810:	loss: 7.77978325		sloss: 0.02235869		floss: 7.67404318		dloss: 0.00001122	
+acc: 0.74039882		nmi: 0.58630962		f1: 0.63614270		ari: 0.51326049
+Epoch--815:	loss: 7.15119171		sloss: 0.02232460		floss: 7.04547930		dloss: 0.00001044	
+acc: 0.74039882		nmi: 0.58630962		f1: 0.63614270		ari: 0.51326049
+Epoch--820:	loss: 7.03306150		sloss: 0.02234016		floss: 6.92735052		dloss: 0.00001044	
+acc: 0.74039882		nmi: 0.58630962		f1: 0.63614270		ari: 0.51326049
+Epoch--825:	loss: 6.73003149		sloss: 0.02231786		floss: 6.62433767		dloss: 0.00001023	
+acc: 0.74039882		nmi: 0.58630962		f1: 0.63614270		ari: 0.51326049
+Epoch--830:	loss: 6.82411671		sloss: 0.02234445		floss: 6.71842003		dloss: 0.00000998	
+acc: 0.74039882		nmi: 0.58630962		f1: 0.63614270		ari: 0.51326049
+Epoch--835:	loss: 6.95604229		sloss: 0.02231339		floss: 6.85036564		dloss: 0.00001012	
+acc: 0.74039882		nmi: 0.58630962		f1: 0.63614270		ari: 0.51326049
+Epoch--840:	loss: 6.67187643		sloss: 0.02222053		floss: 6.56624842		dloss: 0.00001002	
+acc: 0.74039882		nmi: 0.58654432		f1: 0.63614975		ari: 0.51358498
+Epoch--845:	loss: 6.63284636		sloss: 0.02147432		floss: 6.52751446		dloss: 0.00001020	
+acc: 0.74002954		nmi: 0.58524175		f1: 0.63549746		ari: 0.51264928
+Epoch--850:	loss: 6.37019205		sloss: 0.02496694		floss: 6.26302958		dloss: 0.00001026	
+acc: 0.74039882		nmi: 0.58653824		f1: 0.63602541		ari: 0.51329999
+Epoch--855:	loss: 6.37089109		sloss: 0.01038326		floss: 6.26884985		dloss: 0.00001044	
+acc: 0.74113737		nmi: 0.58565295		f1: 0.63687695		ari: 0.51342123
+Epoch--860:	loss: 6.00924730		sloss: 0.01415508		floss: 5.90606403		dloss: 0.00001039	
+acc: 0.74150665		nmi: 0.58909493		f1: 0.63797284		ari: 0.51472244
+Epoch--865:	loss: 5.88231850		sloss: 0.02087769		floss: 5.77546501		dloss: 0.00001068	
+acc: 0.74335303		nmi: 0.58910304		f1: 0.63987452		ari: 0.51878903
+Epoch--870:	loss: 5.80550051		sloss: 0.01714038		floss: 5.70109510		dloss: 0.00001071	
+acc: 0.73966027		nmi: 0.58624395		f1: 0.63543601		ari: 0.51139220
+Epoch--875:	loss: 5.74237156		sloss: 0.02124605		floss: 5.63707638		dloss: 0.00001085	
+acc: 0.74446086		nmi: 0.59084654		f1: 0.64104373		ari: 0.52069119
+Epoch--880:	loss: 5.70237303		sloss: 0.02442191		floss: 5.59521437		dloss: 0.00001092	
+acc: 0.74113737		nmi: 0.58734546		f1: 0.63733180		ari: 0.51449794
+Epoch--885:	loss: 5.67019081		sloss: 0.02533959		floss: 5.56251097		dloss: 0.00001097	
+acc: 0.74076809		nmi: 0.58670988		f1: 0.63644309		ari: 0.51431829
+Epoch--890:	loss: 5.64677429		sloss: 0.02330280		floss: 5.54040575		dloss: 0.00001106	
+acc: 0.74335303		nmi: 0.58874250		f1: 0.63936976		ari: 0.51977068
+Epoch--895:	loss: 5.62987518		sloss: 0.02226237		floss: 5.52421379		dloss: 0.00001108	
+acc: 0.74224520		nmi: 0.58749510		f1: 0.63814910		ari: 0.51785433
+Epoch--900:	loss: 5.61591291		sloss: 0.02214006		floss: 5.51031208		dloss: 0.00001114	
+acc: 0.74039882		nmi: 0.58504925		f1: 0.63562300		ari: 0.51400466
+Epoch--905:	loss: 5.60479164		sloss: 0.02193632		floss: 5.49933958		dloss: 0.00001116	
+acc: 0.74150665		nmi: 0.58621489		f1: 0.63688536		ari: 0.51660334
+Epoch--910:	loss: 5.59538698		sloss: 0.02228741		floss: 5.48975945		dloss: 0.00001120	
+acc: 0.74187592		nmi: 0.58724767		f1: 0.63757240		ari: 0.51707627
+Epoch--915:	loss: 5.58743525		sloss: 0.02239267		floss: 5.48172140		dloss: 0.00001122	
+acc: 0.74113737		nmi: 0.58631009		f1: 0.63649526		ari: 0.51568137
+Epoch--920:	loss: 5.58064365		sloss: 0.02260672		floss: 5.47484827		dloss: 0.00001125	
+acc: 0.74150665		nmi: 0.58662319		f1: 0.63691343		ari: 0.51644028
+Epoch--925:	loss: 5.57495546		sloss: 0.02238856		floss: 5.46927452		dloss: 0.00001126	
+acc: 0.74150665		nmi: 0.58662319		f1: 0.63691343		ari: 0.51644028
+Epoch--930:	loss: 5.57022142		sloss: 0.02222166		floss: 5.46464062		dloss: 0.00001128	
+acc: 0.74113737		nmi: 0.58631009		f1: 0.63649526		ari: 0.51568137
+Epoch--935:	loss: 5.56595278		sloss: 0.02211645		floss: 5.46042442		dloss: 0.00001129	
+acc: 0.74113737		nmi: 0.58631009		f1: 0.63649526		ari: 0.51568137
+Epoch--940:	loss: 5.56254911		sloss: 0.02249203		floss: 5.45684862		dloss: 0.00001130	
+acc: 0.74150665		nmi: 0.58661549		f1: 0.63678776		ari: 0.51614877
+Epoch--945:	loss: 5.55884695		sloss: 0.02164676		floss: 5.45354319		dloss: 0.00001131	
+acc: 0.74113737		nmi: 0.58631009		f1: 0.63649526		ari: 0.51568137
+Epoch--950:	loss: 5.55564642		sloss: 0.02526360		floss: 5.44846869		dloss: 0.00001132	
+acc: 0.74113737		nmi: 0.58581474		f1: 0.63620451		ari: 0.51575803
+Epoch--955:	loss: 5.56830072		sloss: 0.01132025		floss: 5.46507215		dloss: 0.00001134	
+acc: 0.74224520		nmi: 0.58887632		f1: 0.63867997		ari: 0.51644060
+Epoch--960:	loss: 5.55369139		sloss: 0.01679676		floss: 5.44975853		dloss: 0.00001134	
+acc: 0.74261448		nmi: 0.58872796		f1: 0.63889234		ari: 0.51718079
+Epoch--965:	loss: 5.54986954		sloss: 0.01520909		floss: 5.44736719		dloss: 0.00001135	
+acc: 0.73966027		nmi: 0.58496895		f1: 0.63509907		ari: 0.51147403
+Epoch--970:	loss: 5.54411793		sloss: 0.02101452		floss: 5.43915415		dloss: 0.00001136	
+acc: 0.74150665		nmi: 0.58611364		f1: 0.63670943		ari: 0.51624969
+Epoch--975:	loss: 5.54162741		sloss: 0.02148326		floss: 5.43635321		dloss: 0.00001137	
+acc: 0.74224520		nmi: 0.58882354		f1: 0.63836812		ari: 0.51693944
+Epoch--980:	loss: 5.53905392		sloss: 0.02154513		floss: 5.43388081		dloss: 0.00001138	
+acc: 0.74076809		nmi: 0.58550946		f1: 0.63591218		ari: 0.51529130
+Epoch--985:	loss: 5.53568220		sloss: 0.02537781		floss: 5.42827082		dloss: 0.00001139	
+acc: 0.74187592		nmi: 0.58753074		f1: 0.63765070		ari: 0.51656644
+Epoch--990:	loss: 5.53379774		sloss: 0.02299279		floss: 5.42777872		dloss: 0.00001139	
+acc: 0.74113737		nmi: 0.58711751		f1: 0.63659221		ari: 0.51480843
+Epoch--995:	loss: 5.53333807		sloss: 0.02359677		floss: 5.42707682		dloss: 0.00001139	
+acc: 0.74039882		nmi: 0.58527724		f1: 0.63555812		ari: 0.51463559
+
+Process finished with exit code 0
